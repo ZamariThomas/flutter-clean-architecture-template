@@ -113,3 +113,8 @@ flutter gen-l10n         # Generate localisation files
 flutter test             # Run tests
 flutter run              # Launch the app
 ```
+
+## Upcoming
+
+1. Tests
+2. Flavors
